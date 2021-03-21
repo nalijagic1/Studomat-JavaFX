@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ba.unsa.etf.rpr.PretragaController">
+   <top>
+      <HBox prefHeight="31.0" prefWidth="600.0" spacing="10.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label text="Uzorak:" />
+            <TextField fx:id="fldPretraga" />
+            <Button mnemonicParsing="false" onAction="#pretrazi" text="Traži" />
+         </children>
+      </HBox>
+   </top>
+   <center>
+      <ListView fx:id="listPutanje" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>

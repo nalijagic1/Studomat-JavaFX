@@ -26,11 +26,11 @@ public class GeografijaDAO {
         }
 
         try {
-            glavniGradUpit = conn.prepareStatement("SELECT grad.id, grad.naziv, grad.broj_stanovnika, grad.drzava FROM grad, drzava WHERE grad.drzava=drzava.id AND drzava.naziv=?");
+            glavniGradUpit = conn.prepareStatement("SELECT grad.id, grad.naziv, grad.broj_stanovnika, grad.drzava,grad.postanski_broj,grad.slika FROM grad, drzava WHERE grad.drzava=drzava.id AND drzava.naziv=?");
         } catch (SQLException e) {
             regenerisiBazu();
             try {
-                glavniGradUpit = conn.prepareStatement("SELECT grad.id, grad.naziv, grad.broj_stanovnika, grad.drzava FROM grad, drzava WHERE grad.drzava=drzava.id AND drzava.naziv=?");
+                glavniGradUpit = conn.prepareStatement("SELECT grad.id, grad.naziv, grad.broj_stanovnika, grad.drzava,grad.postanski_broj,grad.slika FROM grad, drzava WHERE grad.drzava=drzava.id AND drzava.naziv=?");
             } catch (SQLException e1) {
                 e1.printStackTrace();
             }
@@ -47,12 +47,12 @@ public class GeografijaDAO {
             dajGradoveUpit = conn.prepareStatement("SELECT * FROM grad ORDER BY broj_stanovnika DESC");
             dajDrzaveUpit = conn.prepareStatement("SELECT * FROM drzava ORDER BY naziv");
 
-            dodajGradUpit = conn.prepareStatement("INSERT INTO grad VALUES(?,?,?,?)");
+            dodajGradUpit = conn.prepareStatement("INSERT INTO grad VALUES(?,?,?,?,?,?)");
             odrediIdGradaUpit = conn.prepareStatement("SELECT MAX(id)+1 FROM grad");
             dodajDrzavuUpit = conn.prepareStatement("INSERT INTO drzava VALUES(?,?,?)");
             odrediIdDrzaveUpit = conn.prepareStatement("SELECT MAX(id)+1 FROM drzava");
 
-            promijeniGradUpit = conn.prepareStatement("UPDATE grad SET naziv=?, broj_stanovnika=?, drzava=? WHERE id=?");
+            promijeniGradUpit = conn.prepareStatement("UPDATE grad SET naziv=?, broj_stanovnika=?, drzava=?, postanski_broj=?,slika=? WHERE id=?");
         } catch (SQLException e) {
             e.printStackTrace();
         }
@@ -121,7 +121,10 @@ public class GeografijaDAO {
     }
 
     private Grad dajGradIzResultSeta(ResultSet rs, Drzava d) throws SQLException {
-        return new Grad(rs.getInt(1), rs.getString(2), rs.getInt(3), d);
+        Grad g = new Grad(rs.getInt(1), rs.getString(2), rs.getInt(3), d);
+        g.setPostanskiBroj(rs.getInt(5));
+        g.setSlika(rs.getString(6));
+        return g;
     }
 
     private Drzava dajDrzavu(int id) {
@@ -213,6 +216,8 @@ public class GeografijaDAO {
             dodajGradUpit.setString(2, grad.getNaziv());
             dodajGradUpit.setInt(3, grad.getBrojStanovnika());
             dodajGradUpit.setInt(4, grad.getDrzava().getId());
+            dodajGradUpit.setInt(5, grad.getPostanskiBroj());
+            dodajGradUpit.setString(6,grad.getSlika());
             dodajGradUpit.executeUpdate();
 
         } catch (SQLException e) {
@@ -243,7 +248,9 @@ public class GeografijaDAO {
             promijeniGradUpit.setString(1, grad.getNaziv());
             promijeniGradUpit.setInt(2, grad.getBrojStanovnika());
             promijeniGradUpit.setInt(3, grad.getDrzava().getId());
-            promijeniGradUpit.setInt(4, grad.getId());
+            promijeniGradUpit.setInt(4, grad.getPostanskiBroj());
+            promijeniGradUpit.setString(5, grad.getSlika());
+            promijeniGradUpit.setInt(6, grad.getId());
             promijeniGradUpit.executeUpdate();
 
         } catch (SQLException e) {

@@ -5,12 +5,49 @@ public class Grad {
     private String naziv;
     private int brojStanovnika;
     private Drzava drzava;
+    private int postanskiBroj;
+    private String slika;
 
-    public Grad(int id, String naziv, int brojStanovnika, Drzava drzava) {
+    public Grad(int id, String naziv, int brojStanovnika,Drzava drzava ){
         this.id = id;
         this.naziv = naziv;
         this.brojStanovnika = brojStanovnika;
         this.drzava = drzava;
+        this.slika = "/img/unknown.jpg";
+    }
+
+    public Grad(int id, String naziv, int brojStanovnika, int postanskiBroj ,Drzava drzava ){
+        this.id = id;
+        this.naziv = naziv;
+        this.brojStanovnika = brojStanovnika;
+        this.drzava = drzava;
+        this.postanskiBroj = postanskiBroj;
+        this.slika ="/img/unknown.jpg";
+    }
+
+    public Grad(int id, String naziv, int brojStanovnika, Drzava drzava, int postanskiBroj, String slika) {
+        this.id = id;
+        this.naziv = naziv;
+        this.brojStanovnika = brojStanovnika;
+        this.drzava = drzava;
+        this.postanskiBroj = postanskiBroj;
+        this.slika = slika;
+    }
+
+    public String getSlika() {
+        return slika;
+    }
+
+    public void setSlika(String slika) {
+        this.slika = slika;
+    }
+
+    public int getPostanskiBroj() {
+        return postanskiBroj;
+    }
+
+    public void setPostanskiBroj(int postanskiBroj) {
+        this.postanskiBroj = postanskiBroj;
     }
 
     public Grad() {
