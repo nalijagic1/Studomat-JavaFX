@@ -14,6 +14,7 @@ import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Stage;
+import net.sf.jasperreports.engine.JRException;
 
 import java.io.File;
 import java.io.IOException;
@@ -157,6 +158,16 @@ public class GlavnaController {
             listGradovi.setAll(dao.gradovi());
         }
     }
+    public void dajIzvjestaj(ActionEvent actionEvent) {
+        try {
+            new GradoviReport().showReport(dao.getConn());
+        } catch (JRException e1) {
+            e1.printStackTrace();
+        }
+
+
+    }
+
 
     // Metoda za potrebe testova, vraća bazu u polazno stanje
     public void resetujBazu() {

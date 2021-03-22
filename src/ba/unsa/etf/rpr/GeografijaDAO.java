@@ -14,6 +14,10 @@ public class GeografijaDAO {
             dajGradoveUpit, dodajGradUpit, odrediIdGradaUpit, dodajDrzavuUpit, odrediIdDrzaveUpit, promijeniGradUpit, dajGradUpit,
             nadjiGradUpit, obrisiGradUpit, dajDrzaveUpit;
 
+    public Connection getConn() {
+        return conn;
+    }
+
     public static GeografijaDAO getInstance() {
         if (instance == null) instance = new GeografijaDAO();
         return instance;
