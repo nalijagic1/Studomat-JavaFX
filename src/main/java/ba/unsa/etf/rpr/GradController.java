@@ -24,6 +24,8 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
+import java.util.Locale;
+import java.util.ResourceBundle;
 import java.util.concurrent.atomic.AtomicBoolean;
 
 
@@ -36,14 +38,20 @@ public class GradController {
     public TextField fldPostanskiBroj;
     public ImageView Img;
     private Grad grad;
+    private Locale l;
 
+    public GradController(Grad grad, ArrayList<Drzava> drzave, Locale l) {
+        this.grad = grad;
+        listDrzave = FXCollections.observableArrayList(drzave);
+        this.l = l;
+    }
     public GradController(Grad grad, ArrayList<Drzava> drzave) {
         this.grad = grad;
         listDrzave = FXCollections.observableArrayList(drzave);
     }
-
     @FXML
     public void initialize() {
+        Locale.getDefault();
         choiceDrzava.setItems(listDrzave);
         if (grad != null) {
             fieldNaziv.setText(grad.getNaziv());
@@ -72,8 +80,9 @@ public class GradController {
         stage.close();
     }
     public void promijeniSliku(ActionEvent actionEvent){
+        ResourceBundle bundle = ResourceBundle.getBundle("Jezici",l);
         TextInputDialog dialog = new TextInputDialog();
-        dialog.setContentText("Unesite putanju do slike");
+        dialog.setContentText(bundle.getString("putanja"));
         dialog.showAndWait();
         String putanja = dialog.getEditor().getText();
         Image i = new Image(putanja);
@@ -141,8 +150,9 @@ public class GradController {
 
     public void pretraga(ActionEvent actionEvent) throws IOException {
         Stage stage=new Stage();
-        Parent root = FXMLLoader.load(getClass().getResource("/fxml/pretraga.fxml"));
-        stage.setTitle("Pretraga datoteke");
+        ResourceBundle bundle = ResourceBundle.getBundle("Jezici",l);
+        Parent root = FXMLLoader.load(getClass().getResource("/fxml/pretraga.fxml"),bundle);
+        stage.setTitle(bundle.getString("pretrazi"));
         stage.setScene(new Scene(root, Region.USE_COMPUTED_SIZE, Region.USE_COMPUTED_SIZE));
         stage.show();
     }

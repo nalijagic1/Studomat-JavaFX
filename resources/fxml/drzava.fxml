@@ -1,18 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.ButtonBar?>
-<?import javafx.scene.control.ChoiceBox?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.control.TextField?>
-<?import javafx.scene.layout.ColumnConstraints?>
-<?import javafx.scene.layout.GridPane?>
-<?import javafx.scene.layout.RowConstraints?>
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
 
-
-<?import java.net.URL?>
-<GridPane hgap="5.0" vgap="5.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1">
+<GridPane hgap="5.0" vgap="5.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <stylesheets>
       <URL value="@/css/forme.css" />
    </stylesheets>
@@ -26,14 +19,14 @@
       <RowConstraints />
    </rowConstraints>
    <children>
-      <Label text="Naziv:" />
+      <Label text="%naziv" />
       <TextField fx:id="fieldNaziv" GridPane.columnIndex="1" />
-      <Label text="Glavni grad:" GridPane.rowIndex="1" />
+      <Label text="%glavni" GridPane.rowIndex="1" />
       <ChoiceBox fx:id="choiceGrad" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
       <ButtonBar prefHeight="40.0" prefWidth="200.0" GridPane.columnSpan="2" GridPane.rowIndex="2">
         <buttons>
-          <Button fx:id="btnOk" onAction="#clickOk" mnemonicParsing="false" text="Ok" />
-          <Button fx:id="btnCancel" onAction="#clickCancel" mnemonicParsing="false" text="Cancel" />
+          <Button fx:id="btnOk" mnemonicParsing="false" onAction="#clickOk" text="%ok" />
+          <Button fx:id="btnCancel" mnemonicParsing="false" onAction="#clickCancel" text="%cancel" />
         </buttons>
       </ButtonBar>
    </children>

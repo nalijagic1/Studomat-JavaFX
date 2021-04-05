@@ -7,9 +7,9 @@
    <top>
       <HBox prefHeight="31.0" prefWidth="600.0" spacing="10.0" BorderPane.alignment="CENTER">
          <children>
-            <Label text="Uzorak:" />
+            <Label text="%uzorak" />
             <TextField fx:id="fldPretraga" />
-            <Button mnemonicParsing="false" onAction="#pretrazi" text="Traži" />
+            <Button mnemonicParsing="false" onAction="#pretrazi" text="%trazi" />
          </children>
       </HBox>
    </top>
