@@ -12,7 +12,6 @@ import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Stage;
 import net.sf.jasperreports.engine.JRException;
-import org.jfree.ui.about.SystemProperties;
 
 import java.io.File;
 import java.io.IOException;

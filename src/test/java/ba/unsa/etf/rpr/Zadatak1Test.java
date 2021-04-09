@@ -1,4 +1,4 @@
-/*package ba.unsa.etf.rpr;
+package ba.unsa.etf.rpr;/*package ba.unsa.etf.rpr;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -7,7 +7,7 @@ import java.sql.SQLException;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-public class Zadatak2Test {
+public class Zadatak1Test {
     private GeografijaDAO dao = GeografijaDAO.getInstance();
 
     @BeforeEach
@@ -19,32 +19,32 @@ public class Zadatak2Test {
     public void gradSlika() {
         Grad grad = new Grad();
         grad.setNaziv("Sarajevo");
-        grad.setSlika("sarajevo.png");
-        assertEquals("sarajevo.png", grad.getSlika());
+        grad.setPostanskiBroj(71000);
+        assertEquals(71000, grad.getPostanskiBroj());
     }
 
     @Test
     void testIzmijeniGrad() {
         Grad bech = dao.glavniGrad("Austrija");
-        String slika;
-        if (bech.getSlika().equals("bech.png"))
-            slika = "austrija.png";
+        int broj;
+        if (bech.getPostanskiBroj() == 12345)
+            broj = 54321;
         else
-            slika = "bech.png";
-        bech.setSlika(slika);
+            broj = 12345;
+        bech.setPostanskiBroj(broj);
         dao.izmijeniGrad(bech);
 
         Grad b2 = dao.glavniGrad("Austrija");
-        assertEquals(slika, b2.getSlika());
+        assertEquals(broj, b2.getPostanskiBroj());
     }
 
     @Test
     void testDodajGrad() {
         Drzava francuska = dao.nadjiDrzavu("Francuska");
         Grad sarajevo = new Grad(0, "Sarajevo", 350000, francuska);
-        // Ne moze "bascarsija.png" biti default vrijednost za sliku :D
-        assertNotEquals("bascarsija.png", sarajevo.getSlika());
-        sarajevo.setSlika("bascarsija.png");
+        // Ne moze 33000 biti default vrijednost za poštanski broj :)
+        assertNotEquals(33000, sarajevo.getPostanskiBroj());
+        sarajevo.setPostanskiBroj(33000);
         dao.dodajGrad(sarajevo);
 
         Grad s2 = null;
@@ -54,7 +54,7 @@ public class Zadatak2Test {
         }
         assertNotNull(s2);
 
-        assertEquals("bascarsija.png", s2.getSlika());
+        assertEquals(33000, s2.getPostanskiBroj());
     }
 
     @Test
@@ -63,14 +63,14 @@ public class Zadatak2Test {
         Drzava francuska = dao.nadjiDrzavu("Francuska");
 
         Grad sarajevo = new Grad(0, "Sarajevo", 350000, francuska);
-        assertNotEquals("skenderija.png", sarajevo.getSlika());
-        sarajevo.setSlika("skenderija.png");
+        assertNotEquals(71000, sarajevo.getPostanskiBroj());
+        sarajevo.setPostanskiBroj(71000);
         dao.dodajGrad(sarajevo);
 
         Grad s2 = dao.nadjiGrad("Sarajevo");
         assertNotNull(s2);
 
-        assertEquals("skenderija.png", s2.getSlika());
+        assertEquals(71000, s2.getPostanskiBroj());
     }
 }
 */

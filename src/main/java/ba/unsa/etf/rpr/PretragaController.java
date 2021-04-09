@@ -1,6 +1,5 @@
 package ba.unsa.etf.rpr;
 
-import com.sun.javafx.charts.Legend;
 import javafx.application.Platform;
 import javafx.collections.FXCollections;
 import javafx.collections.ListChangeListener;
@@ -13,8 +12,6 @@ import javafx.scene.control.TextField;
 import javax.swing.filechooser.FileSystemView;
 import java.io.File;
 import java.net.URL;
-import java.util.ArrayList;
-import java.util.Locale;
 import java.util.ResourceBundle;
 
 public class PretragaController implements Initializable

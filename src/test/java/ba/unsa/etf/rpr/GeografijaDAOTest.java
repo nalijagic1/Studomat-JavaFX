@@ -1,5 +1,8 @@
 package ba.unsa.etf.rpr;
 
+import ba.unsa.etf.rpr.Drzava;
+import ba.unsa.etf.rpr.GeografijaDAO;
+import ba.unsa.etf.rpr.Grad;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -7,7 +10,8 @@ import java.io.File;
 import java.sql.SQLException;
 import java.util.ArrayList;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNull;
 
 class GeografijaDAOTest {
     private GeografijaDAO dao = GeografijaDAO.getInstance();

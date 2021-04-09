@@ -22,7 +22,7 @@ public class Grad {
         this.brojStanovnika = brojStanovnika;
         this.drzava = drzava;
         this.postanskiBroj = postanskiBroj;
-        this.slika ="/img/unknown.jpg";
+        this.slika = "/img/unknown.jpg";
     }
 
     public Grad(int id, String naziv, int brojStanovnika, Drzava drzava, int postanskiBroj, String slika) {

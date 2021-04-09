@@ -4,36 +4,61 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="Zadatak 1 urađen, report se uspiješno krenira">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_base_11_0_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_base_win_11_0_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_controls_11_0_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_controls_win_11_0_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_graphics_11_0_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_graphics_win_11_0_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_xerial_sqlite_jdbc_3_21_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/Jezici.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/Jezici_bs.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/Jezici_en_US.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="Zadatak 2">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_10_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_10_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_10_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_lowagie_itext_2_1_7_js8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_beanutils_commons_beanutils_1_9_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_collections_commons_collections_3_2_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_digester_commons_digester_2_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_inject_javax_inject_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_sf_jasperreports_jasperreports_6_16_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_collections4_4_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_assertj_assertj_core_3_11_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_bouncycastle_bcprov_jdk15on_1_64.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_castor_castor_core_1_4_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_castor_castor_xml_1_4_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jdt_ecj_3_21_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jfree_jcommon_1_0_23.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jfree_jfreechart_1_0_19.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_7_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_7_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_7_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_7_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_fxml_11_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_fxml_win_11_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_testfx_testfx_core_4_0_15_alpha.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_testfx_testfx_junit5_4_0_15_alpha.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/baza.db.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/db/baza.db.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nrs-t1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/nrs-t1.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/fxml/drzava.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/resources/fxml/drzava.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/fxml/glavna.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/resources/fxml/glavna.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/fxml/grad.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/resources/fxml/grad.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/fxml/pretraga.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/resources/fxml/pretraga.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ba/unsa/etf/rpr/Drzava.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/Drzava.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ba/unsa/etf/rpr/DrzavaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/DrzavaController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ba/unsa/etf/rpr/GeografijaDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/GeografijaDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ba/unsa/etf/rpr/GlavnaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/GlavnaController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ba/unsa/etf/rpr/Grad.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/Grad.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ba/unsa/etf/rpr/GradController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/GradController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ba/unsa/etf/rpr/GradoviReport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/GradoviReport.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ba/unsa/etf/rpr/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ba/unsa/etf/rpr/PretragaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/PretragaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/Jezici.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Jezici.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/Jezici_bs.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Jezici_bs.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/Jezici_en_US.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Jezici_en_US.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/css/forme.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/css/forme.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/fxml/drzava.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/drzava.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/fxml/glavna.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/glavna.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/fxml/grad.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/grad.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/fxml/pretraga.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/pretraga.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/img/unknown.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/img/unknown.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/reports/gradovi.jrxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/reports/gradovi.jrxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/GlavnaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/GlavnaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/Grad.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/Grad.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/PretragaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ba/unsa/etf/rpr/PretragaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/ba/unsa/etf/rpr/DrzavaControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ba/unsa/etf/rpr/DrzavaControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/ba/unsa/etf/rpr/GeografijaDAOTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ba/unsa/etf/rpr/GeografijaDAOTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/ba/unsa/etf/rpr/GlavnaControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ba/unsa/etf/rpr/GlavnaControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/ba/unsa/etf/rpr/GradControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ba/unsa/etf/rpr/GradControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/ba/unsa/etf/rpr/Zadatak1GlavnaTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ba/unsa/etf/rpr/Zadatak1GlavnaTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/ba/unsa/etf/rpr/Zadatak1GradControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ba/unsa/etf/rpr/Zadatak1GradControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/ba/unsa/etf/rpr/Zadatak1Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ba/unsa/etf/rpr/Zadatak1Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/ba/unsa/etf/rpr/Zadatak2Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ba/unsa/etf/rpr/Zadatak2Test.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,18 +148,31 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1579258535779" />
     <property name="dynamic.classpath" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/P22_BibliotekaLocalized/P16_Biblioteka" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/java" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="project.structure.last.edited" value="Global Libraries" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="project.structure.side.proportion" value="0.36206895" />
     <property name="recentsLimit" value="5" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Lenovo\IdeaProjects\nrs20-t2-nalijagic1\src\test\java" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Lenovo\IdeaProjects\nrs20-t2-nalijagic1\src\main\resources\db" />
+      <recent name="C:\Users\Lenovo\IdeaProjects\nrs20-t2-nalijagic1\src\main\resources" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="ba.unsa.etf" />
+      <recent name="" />
+    </key>
   </component>
   <component name="RunManager" selected="Application.Main">
     <configuration default="true" type="Applet" factoryName="Applet">
@@ -241,7 +279,8 @@
       <workItem from="1616703055937" duration="3749000" />
       <workItem from="1617541184435" duration="9847000" />
       <workItem from="1617568977259" duration="623000" />
-      <workItem from="1617612222730" duration="1802000" />
+      <workItem from="1617612222730" duration="6576000" />
+      <workItem from="1617995818328" duration="1279000" />
     </task>
     <task id="LOCAL-00001" summary="Initial import">
       <created>1579258425293</created>
@@ -355,7 +394,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616412449085</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Zadatak 2">
+      <created>1617614186671</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1617614186671</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -390,7 +436,8 @@
     <MESSAGE value="Kopiran tutorijal 1 sa izmjenama" />
     <MESSAGE value="Zaboravljena izmijenuta baza u prošlom commitu" />
     <MESSAGE value="Zadatak 1 urađen, report se uspiješno krenira" />
-    <option name="LAST_COMMIT_MESSAGE" value="Zadatak 1 urađen, report se uspiješno krenira" />
+    <MESSAGE value="Zadatak 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Zadatak 2" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
