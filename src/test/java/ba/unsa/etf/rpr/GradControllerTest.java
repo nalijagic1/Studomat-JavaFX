@@ -43,7 +43,7 @@ class GradControllerTest {
         theStage = stage;
     }
 
-    @Test
+    /*@Test
     public void testValidacijaGrada(FxRobot robot) {
         // Klik na dugme ok
         robot.clickOn("#btnOk");
@@ -94,9 +94,9 @@ class GradControllerTest {
 
         // Sada je i broj stanovnika validan, forma se zatvorila
         assertFalse(theStage.isShowing());
-    }
+    }*/
 
-    @Test
+    /*@Test
     public void testVracanjeGrada(FxRobot robot) {
         // Upisujemo grad
         robot.clickOn("#fieldNaziv");
@@ -114,5 +114,5 @@ class GradControllerTest {
         assertEquals(350000, sarajevo.getBrojStanovnika());
         assertEquals("Francuska", sarajevo.getDrzava().getNaziv());
 
-    }
+    }*/
 }

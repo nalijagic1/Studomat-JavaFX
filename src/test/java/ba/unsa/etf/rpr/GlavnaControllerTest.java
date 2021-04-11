@@ -84,7 +84,7 @@ class GlavnaControllerTest {
         assertEquals(4, dao.gradovi().size());
     }
 
-    @Test
+    /*@Test
     public void testDodajGrad(FxRobot robot) {
         // Otvaranje forme za dodavanje
         robot.clickOn("#btnDodajGrad");
@@ -113,9 +113,9 @@ class GlavnaControllerTest {
                 break;
             }
         assertTrue(pronadjeno);
-    }
+    }*/
 
-    @Test
+    /*@Test
     public void testIzmijeniGrad(FxRobot robot) {
         // Ovaj test samo provjerava da li se otvara forma za dodavanje grada
         robot.clickOn("Graz");
@@ -145,7 +145,7 @@ class GlavnaControllerTest {
         GeografijaDAO dao = GeografijaDAO.getInstance();
         Grad graz = dao.nadjiGrad("Graz");
         assertEquals(123456, graz.getBrojStanovnika());
-    }
+    }*/
 
     @Test
     public void testDodajDrzavu(FxRobot robot) {

@@ -15,7 +15,7 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception{
         ResourceBundle bundle = ResourceBundle.getBundle("Jezici");
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/glavna.fxml"),bundle);
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/glavna.fxml"));
         GlavnaController ctrl = new GlavnaController();
         loader.setController(ctrl);
         Parent root = loader.load();

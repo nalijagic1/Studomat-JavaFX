@@ -1,4 +1,4 @@
-package ba.unsa.etf.rpr;/*package ba.unsa.etf.rpr;
+package ba.unsa.etf.rpr;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -73,4 +73,3 @@ public class Zadatak2Test {
         assertEquals("skenderija.png", s2.getSlika());
     }
 }
-*/

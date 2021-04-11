@@ -6,7 +6,7 @@
 <?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
 
-<GridPane hgap="5.0" vgap="5.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<GridPane hgap="5.0" vgap="5.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" >
    <stylesheets>
       <URL value="@/css/forme.css" />
    </stylesheets>
@@ -24,23 +24,23 @@
       <RowConstraints />
    </rowConstraints>
    <children>
-      <Label text="%naziv" GridPane.rowIndex="1" />
+      <Label text="Naziv:" GridPane.rowIndex="1" />
       <TextField fx:id="fieldNaziv" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-      <Label text="%stanovnici" GridPane.rowIndex="2" />
+      <Label text="Broj stanovnika:" GridPane.rowIndex="2" />
       <TextField fx:id="fieldBrojStanovnika" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-      <Label text="%drzava" GridPane.rowIndex="3" />
+      <Label text="Država:" GridPane.rowIndex="3" />
       <ChoiceBox fx:id="choiceDrzava" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
       <ButtonBar prefHeight="40.0" prefWidth="200.0" GridPane.columnSpan="2" GridPane.rowIndex="5">
          <buttons>
-            <Button fx:id="btnOk" mnemonicParsing="false" onAction="#clickOk" text="%ok" />
-            <Button fx:id="btnCancel" mnemonicParsing="false" onAction="#clickCancel" text="%cancel" />
+            <Button fx:id="btnOk" mnemonicParsing="false" onAction="#clickOk" text="Ok" />
+            <Button fx:id="btnCancel" mnemonicParsing="false" onAction="#clickCancel" text="Cancel" />
          </buttons>
       </ButtonBar>
-      <Label text="%posta" GridPane.rowIndex="4" />
+      <Label text="Poštanski broj:" GridPane.rowIndex="4" />
       <TextField fx:id="fldPostanskiBroj" GridPane.columnIndex="1" GridPane.rowIndex="4" />
-      <Button mnemonicParsing="false" onAction="#promijeniSliku" text="%promijenisliku" GridPane.columnIndex="1" />
+      <Button mnemonicParsing="false" onAction="#promijeniSliku" text="Promijeni" GridPane.columnIndex="1" />
       <ImageView fx:id="Img" fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true" />
-      <Button mnemonicParsing="false" onAction="#pretraga" text="%odaberisliku" GridPane.columnIndex="1">
+      <Button mnemonicParsing="false" onAction="#pretraga" text="Odaberi sliku" GridPane.columnIndex="1">
          <GridPane.margin>
             <Insets left="70.0" />
          </GridPane.margin>

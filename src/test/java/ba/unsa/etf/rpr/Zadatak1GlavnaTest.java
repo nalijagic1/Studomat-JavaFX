@@ -1,4 +1,4 @@
-package ba.unsa.etf.rpr;/*package ba.unsa.etf.rpr;
+package ba.unsa.etf.rpr;
 
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -54,7 +54,7 @@ public class Zadatak1GlavnaTest {
             robot.clickOn("#btnCancel");
     }
 
-    @Test
+    /*@Test
     public void testDodajGradPostanskiBroj(FxRobot robot) {
         // Otvaranje forme za dodavanje
         robot.clickOn("#btnDodajGrad");
@@ -84,9 +84,9 @@ public class Zadatak1GlavnaTest {
             if (grad.getNaziv().equals("Sarajevo") && grad.getPostanskiBroj() == 71000)
                 pronadjeno = true;
         assertTrue(pronadjeno);
-    }
+    }*/
 
-    @Test
+    /*@Test
     public void testIzmijeniGradPostanskiBroj(FxRobot robot) {
         // 74211 ne smije biti default poštanski broj za Graz jer je to "varanje"
         GeografijaDAO dao = GeografijaDAO.getInstance();
@@ -113,9 +113,9 @@ public class Zadatak1GlavnaTest {
         // Da li je promijenjen poštanski broj Graza?
         graz = dao.nadjiGrad("Graz");
         assertEquals(74211, graz.getPostanskiBroj());
-    }
+    }*/
 
-    @Test
+    /*@Test
     public void testKolonaPostanskiBroj(FxRobot robot) {
         // Postavljamo poštanski broj za Graz da možemo testirati tabelu
         robot.clickOn("Graz");
@@ -156,6 +156,5 @@ public class Zadatak1GlavnaTest {
 
         TextField fld = robot.lookup("#fieldNaziv").queryAs(TextField.class);
         assertEquals("Graz", fld.getText());
-    }
+    }*/
 }
-*/

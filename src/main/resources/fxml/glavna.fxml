@@ -5,30 +5,30 @@
 <?import javafx.scene.layout.*?>
 
 <BorderPane prefHeight="400.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
-   <center>
-      <TableView fx:id="tableViewGradovi" prefHeight="400.0" prefWidth="628.0" BorderPane.alignment="CENTER">
-        <columns>
-          <TableColumn fx:id="colGradId" prefWidth="75.0" text="ID" />
-          <TableColumn fx:id="colGradNaziv" prefWidth="100.0" text="%naziv" />
-          <TableColumn fx:id="colGradStanovnika" prefWidth="90.0" text="%stanovnici" />
-          <TableColumn fx:id="colGradDrzava" prefWidth="185.0" text="%drzava" />
-            <TableColumn fx:id="colPosta" prefWidth="185.0" text="%posta" />
-        </columns>
-      </TableView>
-   </center>
-   <right>
-      <VBox prefHeight="200.0" prefWidth="120.0" spacing="5.0" BorderPane.alignment="CENTER">
-         <children>
-            <Button mnemonicParsing="false" onAction="#promijeniJezik" prefHeight="26.0" prefWidth="113.0" text="%jezik" />
-            <Button fx:id="btnDodajGrad" mnemonicParsing="false" onAction="#actionDodajGrad" prefWidth="Infinity" text="%dodajgrad" />
-            <Button fx:id="btnDodajDrzavu" mnemonicParsing="false" onAction="#actionDodajDrzavu" prefWidth="Infinity" text="%dodajDrzavu" />
-            <Button fx:id="btnIzmijeniGrad" mnemonicParsing="false" onAction="#actionIzmijeniGrad" prefWidth="Infinity" text="%izmijeniGrad" />
-            <Button fx:id="btnObrisiGrad" mnemonicParsing="false" onAction="#actionObrisiGrad" prefWidth="Infinity" text="%ObrisiGrad" />
-            <Button mnemonicParsing="false" onAction="#dajIzvjestaj" prefHeight="26.0" prefWidth="148.0" text="%stampa" />
-         </children>
-         <padding>
-            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-         </padding>
-      </VBox>
-   </right>
+    <center>
+        <TableView fx:id="tableViewGradovi" prefHeight="400.0" prefWidth="628.0" BorderPane.alignment="CENTER">
+            <columns>
+                <TableColumn fx:id="colGradId" prefWidth="75.0" text="ID" />
+                <TableColumn fx:id="colGradNaziv" prefWidth="100.0" text="Naziv" />
+                <TableColumn fx:id="colGradStanovnika" prefWidth="90.0" text="Stanovnika" />
+                <TableColumn fx:id="colGradDrzava" prefWidth="185.0" text="Država" />
+                <TableColumn fx:id="colPosta" prefWidth="185.0" text="Poštanski broj" />
+            </columns>
+        </TableView>
+    </center>
+    <right>
+        <VBox prefHeight="200.0" prefWidth="120.0" spacing="5.0" BorderPane.alignment="CENTER">
+            <children>
+                <Button fx:id="btnDodajGrad" mnemonicParsing="false" onAction="#actionDodajGrad" prefWidth="Infinity" text="Dodaj grad" />
+                <Button fx:id="btnDodajDrzavu" mnemonicParsing="false" onAction="#actionDodajDrzavu" prefWidth="Infinity" text="Dodaj državu" />
+                <Button fx:id="btnIzmijeniGrad" mnemonicParsing="false" onAction="#actionIzmijeniGrad" prefWidth="Infinity" text="Izmijeni grad" />
+                <Button fx:id="btnObrisiGrad" mnemonicParsing="false" onAction="#actionObrisiGrad" prefWidth="Infinity" text="Obriši grad" />
+                <Button mnemonicParsing="false" onAction="#dajIzvjestaj" prefHeight="26.0" prefWidth="148.0" text="Štampa" />
+            </children>
+            <padding>
+                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </padding>
+        </VBox>
+    </right>
 </BorderPane>
+
